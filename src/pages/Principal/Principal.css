@@ -1,0 +1,74 @@
+.inventario-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 250px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #0056b3;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px; /* Espacio entre botones */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button.eliminar {
+    background-color: #dc3545; /* Color rojo para el botón de eliminar */
+  }
+  
+  button.eliminar:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */
+  }

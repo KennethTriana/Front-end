@@ -1,0 +1,152 @@
+
+.historial-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f2f5 !important; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0; 
+    width: 100vw; 
+}
+
+.historial-container {
+    background-color: #ffffff; 
+    padding: 30px; 
+    border-radius: 12px;
+    max-width: 1000px; 
+    margin: 0 auto; 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.historial-container h2 {
+    text-align: center;
+    margin-bottom: 25px; 
+    color: #333;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+.historial-table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    background-color: #f8f8f8;
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+
+.historial-table th {
+    padding: 1rem 0.75rem; 
+    text-align: left;
+    background-color: #004085;
+    color: white;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+.historial-table th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.historial-table th:last-child {
+    border-top-right-radius: 8px;
+}
+
+
+.historial-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6; 
+    color: #555; 
+}
+
+
+.historial-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+.historial-table tbody tr:hover {
+    background-color: #e9f0f5; 
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    .historial-container {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    .historial-container h2 {
+        font-size: 2em;
+    }
+
+
+    .historial-table thead {
+        display: none; 
+    }
+
+    .historial-table, .historial-table tbody, .historial-table tr, .historial-table td {
+        display: block; 
+        width: 100%;
+    }
+
+    .historial-table tr {
+        margin-bottom: 1rem;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        background-color: #ffffff; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .historial-table td {
+        text-align: right;
+        padding-left: 50%; 
+        position: relative;
+        border: none;
+        border-bottom: 1px dashed #e9ecef; 
+    }
+
+    .historial-table td:last-child {
+        border-bottom: none;
+    }
+
+    
+    .historial-table td::before {
+        content: attr(data-label); 
+        position: absolute;
+        left: 0;
+        width: 45%; 
+        padding-left: 0.75rem;
+        font-weight: 600;
+        color: #343a40; 
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .historial-page-wrapper {
+        padding: 10px;
+    }
+    .historial-container {
+        padding: 15px;
+    }
+    .historial-container h2 {
+        font-size: 1.8em;
+    }
+}

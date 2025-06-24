@@ -1,0 +1,204 @@
+/* Ventas.css */
+
+/* Contenedor principal de la página de Ventas */
+/* Este wrapper proporciona el fondo gris claro y centra el contenido principal */
+.ventas-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f2f5 !important; /* Fondo gris claro, consistente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Evita scroll horizontal */
+    margin: 0; /* Asegura que no haya márgenes externos */
+    width: 100vw; /* Ocupa todo el ancho del viewport */
+    height: 100vh; /* Asegura que ocupe toda la altura del viewport para centrado */
+}
+
+/* La tarjeta flotante principal del formulario de ventas */
+.ventas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Ancho máximo para el formulario */
+    margin: 0 auto; /* Centrar la tarjeta en el wrapper */
+    padding: 30px; /* Espacio interno de la tarjeta */
+    background: #ffffff; /* Fondo blanco */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* Sombra para efecto flotante */
+    border-radius: 12px; /* Bordes redondeados */
+    box-sizing: border-box; /* Asegura el modelo de caja */
+}
+
+/* Título del formulario */
+.ventas-container h2 {
+    text-align: center;
+    margin-bottom: 25px; /* Espacio debajo del título */
+    color: #333; /* Color de texto oscuro */
+    font-size: 2.5em; /* Tamaño de fuente consistente */
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los mensajes de error */
+.ventas-container .error {
+    color: #dc3545; /* Rojo de error */
+    background-color: #f8d7da; /* Fondo suave para el error */
+    border: 1px solid #f5c6cb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Estilo para los mensajes de éxito */
+.ventas-container .success {
+    color: #28a745; /* Verde de éxito */
+    background-color: #d4edda; /* Fondo suave para el éxito */
+    border: 1px solid #c3e6cb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 0.95em;
+    font-weight: 500;
+}
+
+/* Estilo para el mensaje de carga */
+.ventas-container p {
+    color: #007bff; /* Azul para mensaje de carga */
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+.ventas-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px; /* Espacio entre cada grupo de input */
+}
+
+/* Estilo para cada div que contiene label e input */
+.ventas-container form > div {
+    width: 100%;
+}
+
+/* Estilo para las etiquetas (labels) */
+.ventas-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Más negrita */
+    color: #495057; /* Color de texto para labels */
+    font-size: 0.95em;
+}
+
+/* Estilo para todos los inputs */
+.ventas-container input[type="text"],
+.ventas-container input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da; /* Borde más suave */
+    border-radius: 8px; /* Bordes más redondeados */
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #495057;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto focus para inputs */
+.ventas-container input:focus {
+    border-color: #004085; /* Borde azul al enfocar */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra de enfoque */
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+}
+
+/* Estilo para el botón de enviar */
+.ventas-container button[type="submit"] {
+    background-color: #004085; /* Azul primario para el botón */
+    color: white;
+    padding: 14px 28px; /* Más padding para el botón */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 600;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    margin-top: 20px; /* Espacio superior */
+    width: 100%; /* El botón ocupa todo el ancho */
+}
+
+/* Efecto hover para el botón */
+.ventas-container button[type="submit"]:hover:not(:disabled) {
+    background-color: #6c757d; /* Azul más oscuro al pasar el ratón */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el botón deshabilitado */
+.ventas-container button[type="submit"]:disabled {
+    background-color: #a0aec0; /* Color más claro cuando está deshabilitado */
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .ventas-page-wrapper {
+        padding: 15px;
+    }
+    .ventas-container {
+        padding: 25px;
+        max-width: 95%;
+    }
+    .ventas-container h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .ventas-container form {
+        gap: 15px;
+    }
+    .ventas-container input {
+        padding: 10px;
+        font-size: 0.95em;
+    }
+    .ventas-container button[type="submit"] {
+        padding: 12px 20px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .ventas-page-wrapper {
+        padding: 10px;
+    }
+    .ventas-container {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .ventas-container h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    .ventas-container label {
+        font-size: 0.9em;
+        margin-bottom: 5px;
+    }
+    .ventas-container form {
+        gap: 12px;
+    }
+    .ventas-container input {
+        padding: 8px;
+    }
+    .ventas-container button[type="submit"] {
+        padding: 10px 15px;
+    }
+}

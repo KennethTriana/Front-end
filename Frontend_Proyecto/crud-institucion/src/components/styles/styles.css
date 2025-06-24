@@ -1,0 +1,49 @@
+/* Estilos generales del contenedor */
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Estilos para la cuadrícula */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Ajustes para las imágenes */
+  .card img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Limitar el tamaño máximo de las imágenes */
+    object-fit: cover;
+  }
+  
+  /* Estilos de la paginación */
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    margin: 0 5px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query para pantallas pequeñas */
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }

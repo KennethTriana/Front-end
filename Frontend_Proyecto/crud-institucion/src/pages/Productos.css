@@ -1,0 +1,145 @@
+
+
+.inventario-container {
+  max-width: 850px; 
+  margin: 2rem auto; 
+  padding: 1.8rem; 
+  background: #ffffff;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.inventario-container h2,
+.inventario-container h3 {
+  font-size: 1.6rem; 
+  margin-bottom: 1.2rem; 
+}
+
+.inventario-container form div {
+  margin-bottom: 15px; 
+}
+
+.inventario-container label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.95rem; 
+  color: #555;
+}
+
+
+.inventario-container input[type="text"],
+.inventario-container input[type="date"],
+.inventario-container input[type="number"],
+.inventario-container select {
+  width: calc(100% - 20px); 
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 0; 
+  box-sizing: border-box;
+  font-size: 0.95rem; 
+  color: #333;
+}
+
+
+.inventario-container input[type="date"] {
+  border: none; 
+  background-color: transparent; 
+  box-shadow: none; 
+  outline: none; 
+  text-align: center; 
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+.inventario-container input[type="date"]:focus {
+  border: 1px solid #81C784; 
+}
+
+
+.inventario-container button[type="submit"] {
+  background-color: #004085;
+  color: white;
+  padding: 12px 24px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  margin-top: 20px; 
+  width: 100%;
+  font-size: 1.05rem; 
+  transition: background-color 0.3s ease;
+}
+
+.inventario-container button[type="submit"]:hover {
+  background-color: #6c757d;
+}
+
+.inventario-container button[type="submit"]:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.inventario-container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem; 
+}
+
+.inventario-container li {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 12px; 
+  margin-bottom: 10px; 
+  border-radius: 8px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem; 
+}
+
+.inventario-container li strong {
+  color: #333;
+  flex-basis: auto;
+  margin-right: 15px; 
+}
+
+.inventario-container li button {
+  background-color: #2196F3;
+  color: white;
+  padding: 8px 12px; 
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.9rem; 
+  transition: background-color 0.3s ease;
+}
+
+.inventario-container li button:first-of-type {
+    margin-left: auto;
+}
+
+.inventario-container li button:hover {
+  background-color: #1976D2;
+}
+
+.inventario-container li button:last-child {
+  background-color: #f44336;
+}
+
+.inventario-container li button:last-child:hover {
+  background-color: #d32f2f;
+}
+
+.error, .success {
+  color: #d32f2f;
+  background-color: #ffebee;
+  border: 1px solid #d32f2f;
+  padding: 10px; 
+  border-radius: 5px; 
+  margin-bottom: 15px; 
+  text-align: center;
+  font-size: 0.95rem;
+}
